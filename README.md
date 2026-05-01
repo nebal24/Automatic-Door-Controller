@@ -99,7 +99,39 @@ Behavior:
 - If no object is detected or the object is farther than `15 cm`:
   - The LCD displays `Door Closed`
   - The servo moves to the closed position
+---
+## 🛠️ Technologies
 
+- Embedded C  
+- PIC18F4620  
+- MPLAB X IDE  
+- XC8 Compiler  
+- ADC  
+- UART  
+- Timer1  
+- LCD interfacing  
+- Servo control  
+---
+## ⚙️ How to Run
+
+1. Open the project in MPLAB X IDE  
+2. Select device: PIC18F4620  
+3. Build using XC8 compiler  
+4. Upload the generated HEX file to the microcontroller or run simulation  
+5. Connect components based on the pin configuration
+
+---
+## ⚠️ Notes
+
+- Distance threshold is set to 15 cm  
+- Timer1 is used for ultrasonic timing  
+- ADC is configured for 10-bit readings  
+- UART is used for serial communication
+
+## 👥 Contributors
+
+- Nebal  @nebal24
+- Afnan  @AfnanSalameh36
 ---
 
 ## Source Files
@@ -112,3 +144,4 @@ my_adc.c         # ADC initialization and reading functions
 my_adc.h         # ADC header file
 my_ser.c         # UART serial communication functions
 my_ser.h         # UART header file
+
